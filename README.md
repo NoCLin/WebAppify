@@ -6,14 +6,14 @@
 
 ## Installation
 
-- Greasemonkey (required)
+- Install Greasemonkey / TemperMonkey (or any other alternatives)
 - [Click here](https://github.com/NoCLin/WebAppify/raw/master/WebAppify.user.js)
 
 
 ## Steps
 
 1. Open context menu (right-click)
-2. Select TemperMonkey (or any other alternatives) -> WebAppify -> Install as PWA
+2. Select TemperMonkey / TemperMonkey (or any other alternatives) -> WebAppify -> Install as PWA
 
 ## Highlights
 
