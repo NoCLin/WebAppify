@@ -14,6 +14,7 @@
 
 1. Open context menu (right-click)
 2. Select TemperMonkey / TemperMonkey (or any other alternatives) -> WebAppify -> Install as PWA
+3. Locate the installation button on the right-hand side of the address bar
 
 ## Highlights
 
