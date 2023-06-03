@@ -1,8 +1,11 @@
 # WebAppify
 
-> Make any website an installable PWA.
+> Make any website an installable PWA, **regardless of whether or not the website owner has provided one**.
 
-![](./demo.png)
+![](./imgs/demo.png)
+![](./imgs/google.png)
+![](./imgs/poe.png)
+![](./imgs/notion.png)
 
 ## Installation
 
