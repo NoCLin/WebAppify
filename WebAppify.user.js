@@ -199,9 +199,9 @@
             modal.style.display = 'block';
         }
 
-        const targetSizeIconUrl = `https://icon.horse/icon/${window.location.host}?size=large`
+        const targetSiteIconUrl = `https://icon.horse/icon/${window.location.host}?size=large`
 
-        fetchWithGM(targetSizeIconUrl).then(response => {
+        fetchWithGM(targetSiteIconUrl).then(response => {
             return blobToBase64Url(response.response)
         }).then(base64data => {
             return resizeImage(base64data, 512, 512)
