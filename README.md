@@ -2,10 +2,10 @@
 
 > Make any website an installable PWA, **regardless of whether or not the website owner has provided one**.
 
-![](./imgs/demo.png)
-![](./imgs/google.png)
-![](./imgs/poe.png)
-![](./imgs/notion.png)
+|          |          |
+|----------|----------|
+| ![image](./imgs/install.png) | ![image](./imgs/google.png) |
+| ![image](./imgs/poe.png)     | ![image](./imgs/notion.png) |
 
 ## Installation
 
