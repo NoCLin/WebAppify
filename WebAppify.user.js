@@ -6,8 +6,8 @@
 // @author       NoCLin
 // @match        *://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=undefined.localhost
-// @updateURL    http://
-// @downloadURL  http://
+// @updateURL    https://github.com/NoCLin/WebAppify/raw/master/WebAppify.user.js
+// @downloadURL  https://github.com/NoCLin/WebAppify/raw/master/WebAppify.user.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM_registerMenuCommand
 // @connect      icon.horse
