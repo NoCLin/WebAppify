@@ -9,8 +9,9 @@
 
 Known limitations:
 
-- Tested on Chrome + Tampermonkey only.
-- Firefox and Safari are not supported.
+- Tested on Chrome + HTTPS sites only. The feature is integrated within **Microsoft Edge by default**. [screenshot](https://smms.app/image/ijqGShcCwoWmnBT)
+- [Firefox](https://www.reddit.com/r/firefox/comments/uwojh7/why_did_firefox_kill_pwa_support/) and Safari are not supported.
+- Some websites may still be impacted by CSP and unable to load resources.
 
 ## Installation
 
