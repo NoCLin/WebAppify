@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WebAppify (Dev)
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Make any website an installable PWA.
 // @author       NoCLin
 // @match        *://*/*
