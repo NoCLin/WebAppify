@@ -71,7 +71,7 @@
         });
     }
 
-    function blobToBase64Url(blob) {
+    function toBase64Url(blob) {
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.readAsDataURL(blob);
@@ -172,8 +172,18 @@
             <option value="browser" ${manifest.display === 'browser' ? 'selected' : ''}>Browser</option>
         </select>
         <br>
-        <label for="webappify-icon">Icon:</label>
-        <img id="webappify-icon" width="64" height="64" alt="icon"/>
+        <div>
+                <label for="webappify-icon">Icon:</label>
+            <img id="webappify-icon" width="64" height="64" alt="icon" style="
+                background-size: 20px 20px;
+                background-position: 0 0, 10px 10px;
+                background-image: 
+                    linear-gradient(45deg,#eee 25%,transparent 0,transparent 75%,#eee 0,#eee),
+                    linear-gradient(45deg, #eee 25%, #fff 0, #fff 75%, #eee 0, #eee);
+                    "
+            />
+        </div>
+
         <br>
         
         <label for="bg-color">Background Color:</label>
@@ -194,6 +204,21 @@
             modal.style.display = 'none';
         }
     });
+
+    document.getElementById("webappify-icon").addEventListener("click", function (e) {
+        const input = document.createElement('input');
+        input.type = 'file';
+
+        input.onchange = e => {
+            const file = e.target.files[0];
+            toBase64Url(file).then(base64data => {
+                return resizeImage(base64data, 512, 512)
+            }).then(resized => {
+                document.querySelector("#webappify-icon").src = resized
+            })
+        }
+        input.click();
+    })
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -221,7 +246,7 @@
 
         const targetSiteIconUrl = `https://icon.horse/icon/${window.location.host}?size=large`
         fetchWithGM(targetSiteIconUrl).then(response => {
-            return blobToBase64Url(response.response)
+            return toBase64Url(response.response)
         }).then(base64data => {
             return resizeImage(base64data, 512, 512)
         }).then(resized => {
